@@ -1,6 +1,6 @@
-<div class="columns">
+<div class="columns is-multiline">
   {% for post in postslist | reverse %}
-    <div class="column">
+    <div class="column is-half">
       <div class="card">
         <article class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
           <a href="{{ post.url | url }}" class="postlist-link">
