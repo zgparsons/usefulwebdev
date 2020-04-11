@@ -1,0 +1,43 @@
+/* Grid */
+/* 
+.auto-grid>* {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.auto-grid>*+* {
+    margin-top: 1rem;
+}
+
+@supports (display: grid) {
+    .auto-grid {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(var(--auto-grid-min-size, 18rem), 1fr));
+        grid-gap: 1rem;
+        list-style: none;
+    }
+    .auto-grid>* {
+        max-width: unset;
+        margin: unset;
+    }
+}
+
+.wrapper {
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/* Featured Images */
+/* img {
+    max-width: 100%;
+} */
+
+.card:hover {
+    -webkit-transform: scale(1) translateY(-3px);
+    -ms-transform: scale(1) translateY(-3px);
+    transform: scale(1) translateY(-3px);
+    -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15); }
