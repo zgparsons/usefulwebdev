@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const del = require('del');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -66,6 +67,10 @@ module.exports = function(eleventyConfig) {
     ui: false,
     ghostMode: false
   });
+
+  //// Clean _site on build - Un-comment if needed ⛔
+  // const dirToClean = '_site/*';
+  // del(dirToClean);
 
   return {
     templateFormats: [

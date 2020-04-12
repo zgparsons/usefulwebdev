@@ -7,6 +7,7 @@ tags:
   - developer
   - colors
   - design
+  - usefulwebdev
 layout: layouts/post.njk
 image: /img/happyhues.png
 alt: Happy Hues Homepage capture
