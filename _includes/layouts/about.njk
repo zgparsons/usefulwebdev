@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-about
+---
+
+{{ content | safe }}
+
+{% set postslist = collections.usefulwebdev %}
+{% include "postslist.njk" %}

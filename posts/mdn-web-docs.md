@@ -1,5 +1,6 @@
 ---
-title: MDN Web Docs
+title: mdn-web-docs
+safeTitle: MDN Web Docs
 description: "MDN's mission is simple: provide developers with the information they need to easily build projects on the open Web."
 date: 2020-04-11
 tags:
@@ -9,6 +10,7 @@ layout: layouts/post.njk
 image: /img/mdn.png
 alt: MDN Web Docs Homepage capture
 icon: mdnwebdocs
+site: https://developer.mozilla.org/en-US/docs/MDN/About
 ---
 
 ![MDN Web Docs Homepage capture](/img/mdn.png)

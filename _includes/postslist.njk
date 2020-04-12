@@ -3,27 +3,27 @@
     <div class="column is-one-third">
       <div class="card">
         <article class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-          <a href="{{ post.url | url }}" class="postlist-link">
             <div class="card-image">
               <figure class="image">
                 <img alt="{{ post.data.alt }}" src="{{ post.data.image }}">
               </figure>
             </div>
-          </a>
           <div class="card-content">
             <div class="media" id="card-title">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ post.data.icon }}.svg">
+                  <img src="{% if post.data.icon %}https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ post.data.icon }}.svg {% else %}https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/15763841651530513411-512.png {% endif %}">
                 </figure>
               </div>
               <div class="media-content">
+              <a href="{{ post.data.site }}" target="_blank">
                 <p class="title is-4">
-                  {% if post.data.title %}{{ post.data.title }}
+                  {% if post.data.safeTitle %}{{ post.data.safeTitle }}
                   {% else %}
                     <code>{{ post.url }}</code>
                   {% endif %}
                 </p>
+                </a>
               </div>
             </div>
             <div class="content">
