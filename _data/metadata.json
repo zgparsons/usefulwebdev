@@ -1,12 +1,12 @@
 {
-  "title": "usefor.dev",
-  "url": "https://usefor.dev",
+  "title": "usefulweb.dev",
+  "url": "https://usefulweb.dev",
   "description": "A useful list of resources to use for web development.",
   "feed": {
     "subtitle": "A useful list of resources to use for web development.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://usefor.dev/"
+    "id": "https://usefulweb.dev/"
   },
   "author": {
     "name": "Zachary Parsons",

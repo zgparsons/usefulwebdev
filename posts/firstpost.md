@@ -43,4 +43,6 @@ layout: layouts/post.njk
 
 * https://codewars.com
 
-* 
+* https://get.dev
+
+* https://github.com

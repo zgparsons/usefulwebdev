@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+// Set colours
+$darkblue: #094067;
+$offgrey: #5f6c7b;
+$lightblue: #3da9fc;
+$lighterblue: #90b4ce;
+$red: #ef4565;
+
+// Update Bulma's global variables
+$primary: $lightblue;
+$info: $lighterblue;
+$link: $red;
+$grey: $offgrey;
+$dark: $darkblue;
+
+// Set font
+$family-sans-serif: "Nunito", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+/* Custom Card Hover effect */
+.card:hover {
+  -webkit-transform: scale(1) translateY(-3px);
+  -ms-transform: scale(1) translateY(-3px);
+  transform: scale(1) translateY(-3px);
+  -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+}
+
+#card-title {
+    align-items: center;
+}
+
+
+
+@import "../node_modules/bulma/bulma";

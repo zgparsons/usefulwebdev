@@ -5,6 +5,7 @@ date: 2020-04-11
 tags:
   - developer
   - hosting
+  - usefulweb.dev
 layout: layouts/post.njk
 image: /img/netlify.png
 alt: Netlify Homepage capture
