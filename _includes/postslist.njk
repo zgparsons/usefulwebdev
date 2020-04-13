@@ -3,27 +3,31 @@
     <div class="column is-one-third">
       <div class="card">
         <article class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-            <div class="card-image">
-              <figure class="image">
-                <img alt="{{ post.data.alt }}" src="{{ post.data.image }}">
-              </figure>
-            </div>
+          <div class="card-image">
+            <figure class="image">
+              <img alt="{{ post.data.alt }}" src="{{ post.data.image }}">
+            </figure>
+          </div>
           <div class="card-content">
-            <div class="media" id="card-title">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{% if post.data.icon %}https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ post.data.icon }}.svg {% else %}https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/15763841651530513411-512.png {% endif %}">
-                </figure>
-              </div>
-              <div class="media-content">
-              <a href="{{ post.data.site }}" target="_blank">
-                <p class="title is-4">
-                  {% if post.data.safeTitle %}{{ post.data.safeTitle }}
-                  {% else %}
-                    <code>{{ post.url }}</code>
-                  {% endif %}
-                </p>
-                </a>
+            <div class="media card-title">
+              <div class="level">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    {% if post.data.icon %}
+                    <img alt="{{ post.data.safeTitle }} icon" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ post.data.icon }}.svg">
+                    {% else %}
+                    <img alt="Correct icon not available - a gear icon shown instead" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/15763841651530513411-512.png">
+                    {% endif %}
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">
+                    {% if post.data.safeTitle %}{{ post.data.safeTitle }}
+                    {% else %}
+                      <code>{{ post.url }}</code>
+                    {% endif %}
+                  </p>
+                </div>
               </div>
             </div>
             <div class="content">
@@ -33,12 +37,17 @@
               <p>
                 {{ post.data.description }}
               </p>
-              {% for tag in post.data.tags %}
-                {%- if collections.tagList.indexOf(tag) != -1 -%}
-                  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-                  <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
-                {%- endif -%}
-              {% endfor %}
+              <p>
+                <a href="{{ post.data.site }}" target="_blank"><button class="button">Visit</button></a>
+              </p>
+              <div class="tags">
+                {% for tag in post.data.tags %}
+                  {%- if collections.tagList.indexOf(tag) != -1 -%}
+                    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                    <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
+                  {%- endif -%}
+                {% endfor %}
+              </div>
             </div>
           </article>
         </div>

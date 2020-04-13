@@ -21,16 +21,33 @@ $family-sans-serif: "Nunito", BlinkMacSystemFont, -apple-system, "Segoe UI", "Ro
 
 /* Custom Card Hover effect */
 .card:hover {
-  -webkit-transform: scale(1) translateY(-3px);
-  -ms-transform: scale(1) translateY(-3px);
-  transform: scale(1) translateY(-3px);
+  -webkit-transform: scale(1) translateY(-2px);
+  -ms-transform: scale(1) translateY(-2px);
+  transform: scale(1) translateY(-2px);
   -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
 }
 
-#card-title {
+.card-title {
     align-items: center;
 }
 
-
+main {
+  padding: 1rem;
+}
+main :first-child {
+  margin-top: 0;
+}
+header {
+  border-bottom: 1px dashed $info;
+}
+#footer-nav {
+  background-color: #fafafa;
+}
+footer {
+  border-top: 1px dashed $info;
+}
+footer p {
+  padding: 0.5rem 0.75rem
+}
 
 @import "../node_modules/bulma/bulma";

@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
+    <title>{{ renderData.title or safeTitle or title }}
+      |
+      {{ metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
@@ -13,19 +15,9 @@
   <body>
     <header>
       <nav class="navbar is-light is-spaced" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a href="{{ '/' | url }}"><img src="/img/logo.png" class="navbar-item" width="240"></a>
-          {# <h1 class="home navbar-item"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1> #}
+        <div class="navbar-brand container">
+          <a href="{{ '/' | url }}"><img alt="UsefulWeb.dev logo" src="/img/logo.png" class="navbar-item" width="240"></a>
         </div>
-
-        {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-        <ul class="navbar-menu">
-          {%- for entry in collections.all | eleventyNavigation %}
-            <li class="navbar-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-        </ul>
       </nav>
     </header>
 
@@ -35,17 +27,27 @@
 
     </main>
 
-    <footer class="container">
-      <div class="is-info">
-        <p>
-          <em>This is an
-            <a href="https://www.11ty.io/">Eleventy project</a>
-            created from the
-            <a href="https://github.com/11ty/eleventy-base-blog">
-              <code>eleventy-base-blog</code>
-              repo</a>.</em>
-        </p>
-      </div>
+    <footer class="footer">
+      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+      <nav class="navbar is-spaced" id="footer-nav" role="navigation" aria-label="main navigation">
+        <ul class="navbar-menu container">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="navbar-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+              <a  href="{{ entry.url | url }}"><button class="button is-link is-light">{{ entry.title }}</button></a>
+            </li>
+          {%- endfor %}
+        </ul>
+      </nav>
+      <div>
+          <p class="container">
+            <em><small>This is an
+              <a href="https://www.11ty.io/">Eleventy project</a>
+              created from the
+              <a href="https://github.com/11ty/eleventy-base-blog">
+                <code>eleventy-base-blog</code></a>
+                repo.</small></em>
+          </p>
+        </div>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
