@@ -4,9 +4,22 @@ templateClass: tmpl-post
 ---
 <h1 class="title is-text-primary">{{ safeTitle }}</h1>
 <hr>
-<div class="columns">
-  <div class="column">
+<div class="columns is-centered is-vcentered">
+  <div class="column is-narrow has-text-centered">
+    <div class="content">
     {{ content | safe }}
+    <figure>
+      <a href="{{site}}"><button class="button is-link is-light">Visit {{ safeTitle }}</button></a> <a href="/"><button class="button is-light">More useful sites...</button></a>
+    </figure>
+    <div class="tags">
+      {% for tag in tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
+        {%- endif -%}
+      {% endfor %}
+    </div>
+    </div>
   </div>
 </div>
 <p><a href="{{ '/' | url }}">← Home</a></p>

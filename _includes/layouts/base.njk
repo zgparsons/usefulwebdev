@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/styles.css' }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <script src="https://kit.fontawesome.com/63bc0d330b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar is-light is-spaced" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-light is-spaced">
         <div class="navbar-brand container">
           <a href="{{ '/' | url }}"><img alt="UsefulWeb.dev logo" src="/img/logo.png" class="navbar-item" width="240"></a>
         </div>
@@ -29,25 +30,39 @@
 
     <footer class="footer">
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <nav class="navbar is-spaced" id="footer-nav" role="navigation" aria-label="main navigation">
-        <ul class="navbar-menu container">
+      <nav class="is-spaced" id="footer-nav" role="navigation" aria-label="main navigation">
+        <div class="container field is-grouped">
           {%- for entry in collections.all | eleventyNavigation %}
-            <li class="navbar-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+            <p class="control">
               <a  href="{{ entry.url | url }}"><button class="button is-link is-light">{{ entry.title }}</button></a>
-            </li>
+            </p>
           {%- endfor %}
-        </ul>
+        </div>
       </nav>
-      <div>
-          <p class="container">
-            <em><small>This is an
-              <a href="https://www.11ty.io/">Eleventy project</a>
-              created from the
-              <a href="https://github.com/11ty/eleventy-base-blog">
-                <code>eleventy-base-blog</code></a>
-                repo.</small></em>
+      <div class="container">
+        <div class="buttons field is-grouped">
+        <p class="control">
+          <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>See code on GitHub</span>
+          </button>
+          </a>
+          </p>
+          <p class="control">
+          <a href="https://twitter.com/originalzedders" target="_blank">
+          <button class="button is-primary is-light is-outlined">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span>@originalzedders</span>
+          </button>
+          </a>
           </p>
         </div>
+      </div>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
