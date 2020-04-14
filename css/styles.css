@@ -16,13 +16,13 @@ main :first-child {
   margin-top: 0; }
 
 header {
-  border-bottom: 1px dashed #90b4ce; }
+  border-bottom: 1px dashed #90b4ce75; }
 
 #footer-nav {
   background-color: #fafafa; }
 
 footer {
-  border-top: 1px dashed #90b4ce; }
+  border-top: 1px dashed #90b4ce75; }
 
 footer p {
   padding: 0.5rem 0.75rem; }
