@@ -15,23 +15,21 @@
   </head>
   <body>
     <header>
-      <nav class="navbar is-light is-spaced">
+      <nav class="navbar is-spaced">
         <div class="navbar-brand container">
           <a href="{{ '/' | url }}"><img alt="UsefulWeb.dev logo" src="/img/logo.png" class="navbar-item" width="240"></a>
         </div>
       </nav>
     </header>
 
-    <main class="container">
 
       {{ content | safe }}
 
-    </main>
 
     <footer class="footer">
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <nav class="is-spaced" id="footer-nav" role="navigation" aria-label="main navigation">
-        <div class="container field is-grouped">
+        <div class="container buttons field is-grouped">
           {%- for entry in collections.all | eleventyNavigation %}
             <p class="control">
               <a  href="{{ entry.url | url }}"><button class="button is-link is-light">{{ entry.title }}</button></a>

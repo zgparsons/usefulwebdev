@@ -4,7 +4,7 @@ title: About
 templateClass: tmpl-about
 eleventyNavigation:
   key: About
-  order: 3
+  order: 2
 ---
 
 <p>

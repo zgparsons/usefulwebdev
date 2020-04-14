@@ -12,3 +12,21 @@ alt: Github Homepage capture
 icon: github
 site: https://github.com/about
 ---
+
+<div class="box">
+
+## How people build software.
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <small>* As of August 2019</small>
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

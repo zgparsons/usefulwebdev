@@ -14,10 +14,12 @@ icon: visualstudiocode
 site: https://code.visualstudio.com/docs/supporting/faq
 ---
 
+<div class="box">
+
 ## Code Editing. Redefined.
 
-<figure class="image is-2by1">
-<img alt="Visual Studio Code Homepage" src="/img/vscode.png">
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
 </figure>
 
 > Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
@@ -25,5 +27,7 @@ site: https://code.visualstudio.com/docs/supporting/faq
 > It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
 >
 > <cite>&mdash; Visual Studio Code homepage</cite>
+
+</div>
 
 ---

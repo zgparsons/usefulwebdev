@@ -14,3 +14,19 @@ alt: Sass Homepage capture
 icon: sass
 site: https://sass-lang.com/
 ---
+
+<div class="box">
+
+## CSS with Superpowers
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

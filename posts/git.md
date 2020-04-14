@@ -12,3 +12,19 @@ alt: Git Homepage capture
 icon: git
 site: https://git-scm.com/about
 ---
+
+<div class="box">
+
+## Distributed version control.
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

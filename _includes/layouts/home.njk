@@ -3,4 +3,34 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 title: Home
 ---
+
+<section class="hero is-light is-dark is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+            UsefulWeb.dev
+            </h1>
+            <h2 class="subtitle">
+            Noteworthy resources for Web Devs
+            </h2>
+            <div class="level">
+            <p class="level-left">
+            Compiled by 
+            <a href="https://twitter.com/@originalzedders" target="_blank">
+            <button class="button is-primary is-light" id="hero-twitter">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span>@originalzedders</span>
+            </button></a>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="container">
+
 {{ content | safe }}
+
+</main>

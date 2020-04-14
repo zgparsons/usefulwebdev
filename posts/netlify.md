@@ -13,3 +13,19 @@ alt: Netlify Homepage capture
 icon: netlify
 site: https://www.netlify.com/about/
 ---
+
+<div class="box">
+
+## Deploy your site in seconds...
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

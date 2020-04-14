@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Nunito:wght@400;700&display=swap');
 
 // Set colours
 $darkblue: #094067;
@@ -16,7 +16,9 @@ $link: $red;
 $grey: $offgrey;
 $dark: $darkblue;
 
+
 // Set font
+$family-primary: "Alegreya", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $family-sans-serif: "Nunito", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 /* Custom Card Hover effect */
@@ -47,7 +49,11 @@ footer {
   border-top: 1px dashed #90b4ce75;
 }
 footer p {
-  padding: 0.5rem 0.75rem
+  padding: 0.5rem 0.75rem;
+}
+
+#hero-twitter {
+  margin-left: 0.5rem;
 }
 
 @import "../node_modules/bulma/bulma";

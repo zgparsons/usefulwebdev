@@ -13,3 +13,19 @@ alt: Nodejs Homepage capture
 icon: node-dot-js
 site: https://nodejs.org/en/about/
 ---
+
+<div class="box">
+
+## A JavaScript runtime
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

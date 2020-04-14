@@ -13,3 +13,19 @@ alt: Flat Icon Homepage capture
 icon: 
 site: https://www.freepikcompany.com/flaticon
 ---
+
+<div class="box">
+
+## Free, customizable icons.
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

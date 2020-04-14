@@ -3,12 +3,15 @@
     <div class="column is-one-third">
       <div class="card">
         <article class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+          <a href="{{ post.url }}">
           <div class="card-image">
             <figure class="image">
               <img alt="{{ post.data.alt }}" src="{{ post.data.image }}">
             </figure>
           </div>
+          </a>
           <div class="card-content">
+            <a href="{{ post.url }}">
             <div class="media card-title">
               <div class="level">
                 <div class="media-left">
@@ -30,6 +33,7 @@
                 </div>
               </div>
             </div>
+            </a>
             <div class="content">
               <p>
                 <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
@@ -38,7 +42,7 @@
                 {{ post.data.description }}
               </p>
               <p>
-                <a href="{{ post.data.site }}" target="_blank"><button class="button">Visit</button></a>
+                <a href="{{ post.data.site }}" target="_blank"><button class="button is-small">Visit {{ post.data.safeTitle }}</button></a>
               </p>
               <div class="tags">
                 {% for tag in post.data.tags %}

@@ -1,25 +1,41 @@
 ---
-layout: layouts/base.njk
+layout: layouts/main.njk
 templateClass: tmpl-post
 ---
 <h1 class="title is-text-primary">{{ safeTitle }}</h1>
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="{{ '/' | url }}"><button class="button is-primary is-light is-small">← Home</button></a></li>
+    <li class="is-active"><a href="{{ page.url | url }}" aria-current="page">{{ safeTitle }}</a></li>
+  </ul>
+</nav>
 <hr>
 <div class="columns is-centered is-vcentered">
-  <div class="column is-narrow has-text-centered">
+  <div class="column is-half has-text-centered">
     <div class="content">
     {{ content | safe }}
-    <figure>
-      <a href="{{site}}"><button class="button is-link is-light">Visit {{ safeTitle }}</button></a> <a href="/"><button class="button is-light">More useful sites...</button></a>
-    </figure>
-    <div class="tags">
-      {% for tag in tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-    </div>
+      <div class="box">
+        <div class="tags field is-grouped is-grouped-centered">
+          {% for tag in tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              <p class="control">
+              <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
+              </p>
+            {%- endif -%}
+          {% endfor %}
+        </div>
+        <div class="buttons field is-grouped is-grouped-centered">
+          <p class="control">
+          <a href="{{site}}"><button class="button is-link is-light">Visit {{ safeTitle }}</button></a>
+          </p>
+          <p class="control">
+          <a href="/"><button class="button is-light">More useful sites...</button></a>
+          </p>
+        </div>
+      </div>
+      <hr>
     </div>
   </div>
 </div>
-<p><a href="{{ '/' | url }}">← Home</a></p>
+

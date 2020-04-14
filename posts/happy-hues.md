@@ -14,3 +14,19 @@ alt: Happy Hues Homepage capture
 icon: 
 site: https://www.happyhues.co/
 ---
+
+<div class="box">
+
+## Curated colors in context.
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

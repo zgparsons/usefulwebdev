@@ -13,6 +13,18 @@ icon: mdnwebdocs
 site: https://developer.mozilla.org/en-US/docs/MDN/About
 ---
 
-![MDN Web Docs Homepage capture](/img/mdn.png)
+<div class="box">
 
-https://developer.mozilla.org/en-US/
+## Resources for developers, by developers.
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---

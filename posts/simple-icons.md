@@ -13,6 +13,18 @@ icon: simpleicons
 site: https://github.com/simple-icons/simple-icons/blob/develop/README.md
 ---
 
-Content does exist - this is the:
+<div class="box">
 
-## Simple Icons post
+## Free SVG Icons for Popular Brands
+
+<figure class="image">
+<img alt="{{ alt }}" src="{{ image }}">
+</figure>
+
+> {{ description }}
+>
+> <cite>&mdash; {{ safeTitle }} homepage</cite>
+
+</div>
+
+---
