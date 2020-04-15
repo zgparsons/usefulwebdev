@@ -17,9 +17,9 @@ site: https://www.freepikcompany.com/flaticon
 
 ## Free, customizable icons.
 
-<figure class="image">
+<!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure>
+</figure> -->
 
 > {{ description }}
 >

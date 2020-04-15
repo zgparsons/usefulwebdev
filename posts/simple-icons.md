@@ -17,9 +17,9 @@ site: https://github.com/simple-icons/simple-icons/blob/develop/README.md
 
 ## Free SVG Icons for Popular Brands
 
-<figure class="image">
+<!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure>
+</figure> -->
 
 > {{ description }}
 >

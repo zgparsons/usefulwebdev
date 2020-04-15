@@ -18,9 +18,9 @@ site: https://www.netlify.com/about/
 
 ## Deploy your site in seconds...
 
-<figure class="image">
+<!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure>
+</figure> -->
 
 > {{ description }}
 >

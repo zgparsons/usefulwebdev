@@ -18,9 +18,9 @@ site: https://www.happyhues.co/
 
 ## Curated colors in context.
 
-<figure class="image">
+<!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure>
+</figure> -->
 
 > {{ description }}
 >

@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Nunito:wght@400;700&display=swap');
 
+// Some CSS borrowed from eleventy-base-blog
+
 // Set colours
 $darkblue: #094067;
 $offgrey: #5f6c7b;
@@ -59,5 +61,31 @@ footer p {
 .breadcrumb li {
   align-self: center;
 }
+
+/* Posts list */
+.postlist {
+  list-style: none;
+  padding: 0;
+}
+.postlist-date,
+.postlist-item:before {
+  font-size: 0.8125em; /* 13px /16 */
+  color: var(--darkgray);
+}
+.postlist-date {
+  word-spacing: -0.5px;
+}
+.postlist-link {
+  display: inline-block;
+  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+}
+.postlist-item-active .postlist-link {
+  font-weight: bold;
+}
+.tmpl-home .postlist-link {
+  font-size: 1.1875em; /* 19px /16 */
+  font-weight: 700;
+}
+
 
 @import "../node_modules/bulma/bulma";

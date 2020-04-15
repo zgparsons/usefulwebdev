@@ -4,11 +4,11 @@
       <div class="card">
         <article class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
           <a href="{{ post.url }}">
-          <div class="card-image">
+          {# <div class="card-image">
             <figure class="image">
               <img alt="{{ post.data.alt }}" src="{{ post.data.image }}">
             </figure>
-          </div>
+          </div> #}
           </a>
           <div class="card-content">
             <a href="{{ post.url }}">
@@ -23,14 +23,12 @@
                     {% endif %}
                   </figure>
                 </div>
-                <div class="media-content">
                   <p class="title is-4 is-family-secondary">
                     {% if post.data.safeTitle %}{{ post.data.safeTitle }}
                     {% else %}
                       <code>{{ post.url }}</code>
                     {% endif %}
                   </p>
-                </div>
               </div>
             </div>
             </a>

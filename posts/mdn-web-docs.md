@@ -17,9 +17,9 @@ site: https://developer.mozilla.org/en-US/docs/MDN/About
 
 ## Resources for developers, by developers.
 
-<figure class="image">
+<!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure>
+</figure> -->
 
 > {{ description }}
 >

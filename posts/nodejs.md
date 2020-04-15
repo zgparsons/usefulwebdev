@@ -18,9 +18,9 @@ site: https://nodejs.org/en/about/
 
 ## A JavaScript runtime
 
-<figure class="image">
+<!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure>
+</figure> -->
 
 > {{ description }}
 >
