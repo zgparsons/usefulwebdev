@@ -1,7 +1,7 @@
 ---
 title: font-awesome
 safeTitle: Font Awesome
-description: 
+description: Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.
 date: 2020-04-15
 tags:
   - Icons
@@ -15,7 +15,7 @@ site: https://fontawesome.com
 
 <div class="box">
 
-## Open source CSS framework
+## Popular icon set and toolkit
 
 <!-- <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
