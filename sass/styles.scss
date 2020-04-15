@@ -18,7 +18,7 @@ $dark: $darkblue;
 
 
 // Set font
-$family-primary: "Alegreya", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$family-secondary: "Alegreya", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $family-sans-serif: "Nunito", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 /* Custom Card Hover effect */
@@ -54,6 +54,10 @@ footer p {
 
 #hero-twitter {
   margin-left: 0.5rem;
+}
+
+.breadcrumb li {
+  align-self: center;
 }
 
 @import "../node_modules/bulma/bulma";

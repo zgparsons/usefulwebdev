@@ -15,11 +15,51 @@
   </head>
   <body>
     <header>
-      <nav class="navbar is-spaced">
+    <nav class="navbar is-spaced">
+      <div class="container">
+        <div class="navbar-start">
+          {% if page.url != '/' %}
+          <div class="navbar-item">
+            <a href="{{ '/' | url }}"><button class="button is-info is-light is-medium">⬅ Home</button></a>
+          </div>
+          {% endif %}
+          <div class="navbar-item">
+            <h1 class="title is-family-secondary">
+            UsefulWeb.dev
+            </h1>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item buttons field is-grouped">
+          <p class="control">
+            <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
+              <button class="button is-info is-light is-small">
+                <span class="icon">
+                 <i class="fab fa-github"></i>
+                </span>
+                <span>Code on GitHub</span>
+              </button>
+            </a>
+          </p>
+          <p class="control">
+            <a href="https://twitter.com/originalzedders" target="_blank">
+            <button class="button is-info is-light is-small">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>@originalzedders</span>
+            </button>
+            </a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+      {# <nav class="navbar is-spaced">
         <div class="navbar-brand container">
           <a href="{{ '/' | url }}"><img alt="UsefulWeb.dev logo" src="/img/logo.png" class="navbar-item" width="240"></a>
         </div>
-      </nav>
+      </nav> #}
     </header>
 
 
@@ -42,17 +82,17 @@
         <div class="buttons field is-grouped">
         <p class="control">
           <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
-          <button class="button is-primary is-light is-outlined">
+          <button class="button is-info is-light is-outlined is-small">
             <span class="icon">
               <i class="fab fa-github"></i>
             </span>
-            <span>See code on GitHub</span>
+            <span>Code on GitHub</span>
           </button>
           </a>
           </p>
           <p class="control">
           <a href="https://twitter.com/originalzedders" target="_blank">
-          <button class="button is-primary is-light is-outlined">
+          <button class="button is-info is-light is-outlined is-small">
             <span class="icon">
               <i class="fab fa-twitter"></i>
             </span>

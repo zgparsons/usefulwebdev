@@ -2,9 +2,22 @@
 permalink: /tags/
 layout: layouts/main.njk
 ---
-<h1>Tags</h1>
-
+<h1 class="title is-text-primary">Tags</h1>
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="{{ '/' | url }}"><button class="button is-primary is-light is-small">← Home</button></a></li>
+    <li class="is-active"><a href="{{ page.url | url }}" aria-current="page">Tags</a></li>
+  </ul>
+</nav>
+<hr>
+<div class="columns is-centered">
+<div class="column is-half is-centered">
+<div class="box">
+<div class="tags field is-grouped is-grouped-centered">
 {% for tag in collections.tagList %}
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+  <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
 {% endfor %}
+</div>
+</div>
+</div>

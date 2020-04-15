@@ -4,8 +4,8 @@ safeTitle: Nunjucks
 description: A rich and powerful templating language for JavaScript.
 date: 2020-04-12
 tags:
-  - developer
-  - templating
+  - Developer
+  - Templating
   - usefulwebdev
 layout: layouts/post.njk
 image: /img/nunjucks.png

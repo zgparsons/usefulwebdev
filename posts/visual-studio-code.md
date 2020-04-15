@@ -4,8 +4,8 @@ safeTitle: Visual Studio Code
 description: Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 date: 2020-04-11
 tags:
-  - developer
-  - ide
+  - Developer
+  - IDE
   - usefulwebdev
 layout: layouts/post.njk
 image: /img/vscode.png

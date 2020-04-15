@@ -15,9 +15,17 @@ renderData:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
+<h1 class="title is-text-primary">Tagged “{{ tag }}”</h1>
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="{{ '/' | url }}"><button class="button is-primary is-light is-small">← Home</button></a></li>
+    <li><a href="/tags"><button class="button is-primary is-light is-small">Tags</button></a></li>
+    <li class="is-active"><a href="{{ page.url | url }}" aria-current="page">{{ tag }}</a></li>
+  </ul>
+</nav>
+<hr>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+<a href="{{ '/tags/' | url }}"><button class="button is-link is-light is-small">See all tags</button></a>

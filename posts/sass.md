@@ -4,9 +4,9 @@ safeTitle: Sass
 description: CSS with superpowers. Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 date: 2020-04-12
 tags:
-  - developer
-  - templating
-  - stylesheets
+  - Developer
+  - Templating
+  - CSS
   - usefulwebdev
 layout: layouts/post.njk
 image: /img/sass.png
@@ -17,7 +17,7 @@ site: https://sass-lang.com/
 
 <div class="box">
 
-## CSS with Superpowers
+## CSS with Superpowers.
 
 <figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">

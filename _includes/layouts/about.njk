@@ -2,6 +2,28 @@
 layout: layouts/main.njk
 templateClass: tmpl-about
 ---
+<h1 class="title is-text-primary">{{ title }}</h1>
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="{{ '/' | url }}"><button class="button is-info is-light is-small">← Home</button></a></li>
+    <li class="is-active"><a href="{{ page.url | url }}" aria-current="page">{{ title }}</a></li>
+  </ul>
+</nav>
+<hr>
+<div class="columns">
+<div class="column is-half is-offset-one-quarter">
+<article class="message is-info is-light">
+<div class="message-body">
+<p>
+  This is an Eleventy project created from the 
+  <a href="https://github.com/11ty/eleventy-base-blog" target="_blank">eleventy-base-blog</a> repo.
+</p>
+<p>This site was created by <a href="https://zacharyparsons.co.uk" target="_blank">Zachary</a> using the following resources!</p>
+</div>
+</article>
+</div>
+</div>
+
 
 {{ content | safe }}
 
