@@ -1,12 +1,12 @@
 {
-  "title": "UsefulWeb.dev",
-  "url": "https://usefulweb.dev",
+  "title": "DevSit.es",
+  "url": "https://devsit.es",
   "description": "A useful list of resources to use for web development.",
   "feed": {
     "subtitle": "A useful list of resources to use for web development.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://usefulweb.dev/"
+    "id": "https://devsit.es/"
   },
   "author": {
     "name": "Zachary Parsons",
