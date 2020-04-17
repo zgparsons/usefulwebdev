@@ -10,6 +10,7 @@ $offgrey: #5f6c7b;
 $lightblue: #3da9fc;
 $lighterblue: #90b4ce;
 $red: #ef4565;
+$offwhite: #fafafa
 
 // Update Bulma's global variables
 $primary: $lightblue;
@@ -17,7 +18,6 @@ $info: $lighterblue;
 $link: $red;
 $grey: $offgrey;
 $dark: $darkblue;
-
 
 // Set font
 $family-secondary: "Alegreya", "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -74,7 +74,7 @@ footer p {
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgray);
+  color: var(--offgray);
 }
 .postlist-date {
   word-spacing: -0.5px;
