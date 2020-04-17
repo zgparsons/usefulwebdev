@@ -7,7 +7,7 @@ tags:
   - Developer
   - Templating
   - CSS
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/sass.png
 alt: Sass Homepage capture

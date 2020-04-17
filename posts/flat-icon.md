@@ -5,7 +5,6 @@ description: The largest database of free customizable icons in the world. Flati
 date: 2020-04-12
 tags:
   - Icons
-  - usefulwebdev
 layout: layouts/post.njk
 image: /img/flaticon.png
 alt: Flat Icon Homepage capture

@@ -6,7 +6,7 @@ date: 2020-04-15
 tags:
   - CSS
   - Framework
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/bulma.png
 alt: Bulma Homepage capture

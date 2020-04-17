@@ -6,7 +6,7 @@ date: 2020-04-12
 tags:
   - Colors
   - Design
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/happyhues.png
 alt: Happy Hues Homepage capture

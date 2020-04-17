@@ -5,7 +5,7 @@ description: Over 1000 Free SVG icons for popular brands. See them all on one pa
 date: 2020-04-11
 tags:
   - Icons
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/simpleicons.png
 alt: Simple Icons Homepage capture

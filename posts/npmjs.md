@@ -6,7 +6,7 @@ date: 2020-04-12
 tags:
   - Developer
   - JavaScript
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/npmjs.png
 alt: NPMjs Homepage capture

@@ -5,7 +5,7 @@ description: Get vector icons and social logos on your website with Font Awesome
 date: 2020-04-15
 tags:
   - Icons
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/fontawesome.png
 alt: Font Awesome Homepage capture

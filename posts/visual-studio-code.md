@@ -6,7 +6,7 @@ date: 2020-04-11
 tags:
   - Developer
   - IDE
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/vscode.png
 alt: Visual Studio Code Homepage capture

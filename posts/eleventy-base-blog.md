@@ -6,7 +6,7 @@ date: 2020-04-15
 tags:
   - Static Site Generator
   - Template
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/eleventy.png
 alt: Eleventy Homepage capture

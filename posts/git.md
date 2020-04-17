@@ -5,7 +5,7 @@ description: Git is a free and open source distributed version control system de
 date: 2020-04-12
 tags:
   - Version Control
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/git.png
 alt: Git Homepage capture

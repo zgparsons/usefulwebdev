@@ -5,7 +5,7 @@ description:  GitHub is how people build software. We’re supporting a communit
 date: 2020-04-12
 tags:
   - Version Control
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/github.png
 alt: Github Homepage capture

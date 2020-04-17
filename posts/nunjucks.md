@@ -6,7 +6,7 @@ date: 2020-04-12
 tags:
   - Developer
   - Templating
-  - usefulwebdev
+  - DevSites
 layout: layouts/post.njk
 image: /img/nunjucks.png
 alt: Nunjucks Homepage capture
