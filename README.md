@@ -8,10 +8,10 @@ Please feel free to contact me if you'd like to make a contribution / help in so
 
 ### Table of Contents
 
-- [Requirements / Project Notes]
-- [Design Notes]
-- [Dev Notes]
-- [Credits]
+- [Requirements / Project Notes](#requirements--project-notes)
+- [Design Notes](#design-notes)
+- [Dev Notes](#dev-notes)
+- [Credits](#credits)
 
 ## Requirements / Project Notes
 
