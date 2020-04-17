@@ -1,12 +1,12 @@
 {
-  "title": "DevSit.es",
-  "url": "https://devsit.es",
+  "title": "DevSites",
+  "url": "https://devsites.netlify.app",
   "description": "A useful list of resources to use for web development.",
   "feed": {
     "subtitle": "A useful list of resources to use for web development.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://devsit.es/"
+    "id": "https://devsites.netlify.app/"
   },
   "author": {
     "name": "Zachary Parsons",
