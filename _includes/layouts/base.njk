@@ -14,46 +14,48 @@
   </head>
   <body>
     <header>
-    <nav class="navbar is-spaced">
-      <div class="container">
-        <div class="navbar-start">
-          {% if page.url != '/' %}
-          <div class="navbar-item">
-            <a href="{{ '/' | url }}"><button class="button is-info is-light is-medium">⬅ Home</button></a>
+      <nav class="navbar is-spaced">
+        <div class="container">
+          <div class="navbar-start">
+            {% if page.url != '/' %}
+              <div class="navbar-item">
+                <a href="{{ '/' | url }}">
+                  <button class="button is-info is-light is-medium">⬅ Home</button>
+                </a>
+              </div>
+            {% endif %}
+            <div class="navbar-item">
+              <h1 class="title">
+                🚀 DevSites
+              </h1>
+            </div>
           </div>
-          {% endif %}
-          <div class="navbar-item">
-            <h1 class="title">
-            🚀 DevSites
-            </h1>
+          <div class="navbar-end">
+            <div class="navbar-item buttons field is-grouped">
+              <p class="control">
+                <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
+                  <button class="button is-info is-light is-small">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code on GitHub</span>
+                  </button>
+                </a>
+              </p>
+              <p class="control">
+                <a href="https://twitter.com/originalzedders" target="_blank">
+                  <button class="button is-info is-light is-small">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>@originalzedders</span>
+                  </button>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="navbar-end">
-          <div class="navbar-item buttons field is-grouped">
-          <p class="control">
-            <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
-              <button class="button is-info is-light is-small">
-                <span class="icon">
-                 <i class="fab fa-github"></i>
-                </span>
-                <span>Code on GitHub</span>
-              </button>
-            </a>
-          </p>
-          <p class="control">
-            <a href="https://twitter.com/originalzedders" target="_blank">
-            <button class="button is-info is-light is-small">
-              <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-              <span>@originalzedders</span>
-            </button>
-            </a>
-          </p>
-          </div>
-        </div>
-      </div>
-    </nav>
+      </nav>
       {# <nav class="navbar is-spaced">
         <div class="navbar-brand container">
           <a href="{{ '/' | url }}"><img alt="UsefulWeb.dev logo" src="/img/logo.png" class="navbar-item" width="240"></a>
@@ -61,9 +63,7 @@
       </nav> #}
     </header>
 
-
-      {{ content | safe }}
-
+    {{ content | safe }}
 
     <footer class="footer">
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
@@ -71,7 +71,9 @@
         <div class="container buttons field is-grouped">
           {%- for entry in collections.all | eleventyNavigation %}
             <p class="control">
-              <a  href="{{ entry.url | url }}"><button class="button is-link is-light">{{ entry.title }}</button></a>
+              <a href="{{ entry.url | url }}">
+                <button class="button is-link is-light">{{ entry.title }}</button>
+              </a>
             </p>
           {%- endfor %}
         </div>
@@ -79,39 +81,41 @@
       <hr>
       <div class="container">
         <div class="buttons is-grouped level">
-        <div class="level-item">
-        <h3 class="subtitle control">
-          🚀 DevSites
-        </h3>
-        </div>
-        <div class="level-item">
-          <p>
-          <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
-          <button class="button is-info is-light is-outlined is-small">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Code on GitHub</span>
-          </button>
-          </a>
-          </p>
+          <div class="level-item">
+            <h3 class="subtitle control">
+              🚀 DevSites
+            </h3>
           </div>
           <div class="level-item">
-          <p>
-          <a href="https://twitter.com/originalzedders" target="_blank">
-          <button class="button is-info is-light is-outlined is-small">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-            <span>@originalzedders</span>
-          </button>
-          </a>
-          </p>
+            <p>
+              <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
+                <button class="button is-info is-light is-outlined is-small">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code on GitHub</span>
+                </button>
+              </a>
+            </p>
+          </div>
+          <div class="level-item">
+            <p>
+              <a href="https://twitter.com/originalzedders" target="_blank">
+                <button class="button is-info is-light is-outlined is-small">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>@originalzedders</span>
+                </button>
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://zdev.goatcounter.com/count" async="async" src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
