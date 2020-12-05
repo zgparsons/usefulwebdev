@@ -23,6 +23,7 @@
                     {% endif %}
                   </figure>
                 </div>
+                <br />
                   <p class="title is-4 is-family-secondary">
                     {% if post.data.safeTitle %}{{ post.data.safeTitle }}
                     {% else %}
@@ -33,9 +34,10 @@
             </div>
             </a>
             <div class="content">
-              <p>
+              <br />
+              {# <p>
                 <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-              </p>
+              </p> #}
               <p>
                 {{ post.data.description }}
               </p>
