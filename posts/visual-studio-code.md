@@ -8,7 +8,7 @@ tags:
   - IDE
   - DevSites
 layout: layouts/post.njk
-image: /img/vscode.png
+image: /img/vs-code.png
 alt: Visual Studio Code Homepage capture
 icon: visualstudiocode
 site: https://code.visualstudio.com/docs/supporting/faq
@@ -18,9 +18,9 @@ site: https://code.visualstudio.com/docs/supporting/faq
 
 ## Code Editing. Redefined.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 >

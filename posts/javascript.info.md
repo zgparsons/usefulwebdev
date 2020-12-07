@@ -8,7 +8,7 @@ tags:
   - Tutorial
   - Documentation
 layout: layouts/post.njk
-image: /img/js-info.png
+image: /img/javascript-info.png
 alt: Javascript.info Homepage capture
 icon: javascript
 site: https://javascript.info
@@ -18,9 +18,9 @@ site: https://javascript.info
 
 ## The Modern JavaScript Tutorial
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

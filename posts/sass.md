@@ -19,9 +19,9 @@ site: https://sass-lang.com/
 
 ## CSS with Superpowers.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

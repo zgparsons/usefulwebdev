@@ -7,7 +7,7 @@ tags:
   - Icons
   - DevSites
 layout: layouts/post.njk
-image: /img/fontawesome.png
+image: /img/font-awesome.png
 alt: Font Awesome Homepage capture
 icon: fontawesome
 site: https://fontawesome.com
@@ -17,9 +17,9 @@ site: https://fontawesome.com
 
 ## Popular icon set and toolkit
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

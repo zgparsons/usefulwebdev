@@ -17,9 +17,9 @@ site: https://git-scm.com/about
 
 ## Distributed version control.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

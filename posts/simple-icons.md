@@ -7,7 +7,7 @@ tags:
   - Icons
   - DevSites
 layout: layouts/post.njk
-image: /img/simpleicons.png
+image: /img/simple-icons.png
 alt: Simple Icons Homepage capture
 icon: simpleicons
 site: https://github.com/simple-icons/simple-icons/blob/develop/README.md
@@ -17,9 +17,9 @@ site: https://github.com/simple-icons/simple-icons/blob/develop/README.md
 
 ## Free SVG Icons for Popular Brands
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

@@ -7,7 +7,7 @@ tags:
   - HTML
   - Developer
 layout: layouts/post.njk
-image: 
+image: /img/html-head.png
 alt: 
 icon: 
 site: https://htmlhead.dev
@@ -17,9 +17,9 @@ site: https://htmlhead.dev
 
 ## Head
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

@@ -8,7 +8,7 @@ tags:
   - JavaScript
   - DevSites
 layout: layouts/post.njk
-image: /img/npmjs.png
+image: /img/npm.png
 alt: NPMjs Homepage capture
 icon: npm
 site: https://www.npmjs.com/about
@@ -17,9 +17,9 @@ site: https://www.npmjs.com/about
 
 ## The package manager for Node.js
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe.
 >

@@ -7,8 +7,8 @@ tags:
   - JavaScript
   - Developer
 layout: layouts/post.njk
-image: 
-alt: 
+image: /img/deno.png
+alt: Deno homepage
 icon: deno
 site: https://deno.land
 ---
@@ -17,9 +17,9 @@ site: https://deno.land
 
 ## Secure by default.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

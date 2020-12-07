@@ -8,8 +8,8 @@ tags:
   - Todo List
   - Organisation
 layout: layouts/post.njk
-image: 
-alt: 
+image: /img/notion.png
+alt: Notion homepage
 icon: notion
 site: https://notion.so
 ---
@@ -18,9 +18,9 @@ site: https://notion.so
 
 ## All-in-one-workspace.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

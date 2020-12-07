@@ -18,9 +18,9 @@ site: https://mozilla.github.io/nunjucks/
 
 ## {{ description }}
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > **Rich Powerful** language with block inheritance, autoescaping, macros, asynchronous control, and more. Heavily inspired by jinja2
 >

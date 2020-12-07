@@ -8,7 +8,7 @@ tags:
   - Template
   - DevSites
 layout: layouts/post.njk
-image: /img/eleventy.png
+image: /img/eleventy-base-blog.png
 alt: Eleventy Homepage capture
 icon: eleventy
 site: https://github.com/11ty/eleventy-base-blog
@@ -18,9 +18,9 @@ site: https://github.com/11ty/eleventy-base-blog
 
 ## A starter repo for a blog site
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

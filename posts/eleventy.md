@@ -17,9 +17,9 @@ site: https://11ty.dev
 
 <h2 class="is-family-secondary">A simpler static site generator.</h2>
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

@@ -8,8 +8,8 @@ tags:
   - Static Site Generator
   - Starter
 layout: layouts/post.njk
-image: 
-alt: 
+image: /img/hylia.png
+alt: Hylia homepage
 icon: eleventy
 site: https://hylia.website/
 ---
@@ -18,9 +18,9 @@ site: https://hylia.website/
 
 ## A simple starter kit for Eleventy
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

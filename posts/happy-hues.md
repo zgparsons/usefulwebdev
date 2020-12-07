@@ -8,7 +8,7 @@ tags:
   - Design
   - DevSites
 layout: layouts/post.njk
-image: /img/happyhues.png
+image: /img/happy-hues.png
 alt: Happy Hues Homepage capture
 icon: 
 site: https://www.happyhues.co/
@@ -18,9 +18,9 @@ site: https://www.happyhues.co/
 
 ## Curated colors in context.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >

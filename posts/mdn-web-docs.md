@@ -7,7 +7,7 @@ tags:
   - Developer
   - Documentation
 layout: layouts/post.njk
-image: /img/mdn.png
+image: /img/mdn-web-docs.png
 alt: MDN Web Docs Homepage capture
 icon: mdnwebdocs
 site: https://developer.mozilla.org/en-US/docs/MDN/About
@@ -17,9 +17,9 @@ site: https://developer.mozilla.org/en-US/docs/MDN/About
 
 ## Resources for developers, by developers.
 
-<!-- <figure class="image">
+<figure class="image">
 <img alt="{{ alt }}" src="{{ image }}">
-</figure> -->
+</figure>
 
 > {{ description }}
 >
