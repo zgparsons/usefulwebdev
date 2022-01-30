@@ -69,8 +69,8 @@ module.exports = function(eleventyConfig) {
   });
 
   //// Clean _site on build - Un-comment if needed ⛔
-  // const dirToClean = '_site/*';
-  // del(dirToClean);
+  const dirToClean = '_site/*';
+  del(dirToClean);
 
   return {
     templateFormats: [
