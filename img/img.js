@@ -4,9 +4,11 @@ const options = {
     width: 1800,
     height: 900,
     overwrite: true,
+    // add css selectors to set 'visibility:hidden'
     hideElements: [
         '#qc-cmp2-ui',
-        '.sc-VigVT'
+        '.sc-VigVT',
+        '.grid-item--ad'
     ]
 };
 
