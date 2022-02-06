@@ -35,8 +35,6 @@
     "markdown-it-anchor": "^8.4.1"
   },
   "dependencies": {
-    "bulma": "^0.9.3",
-    "node-sass": "^7.0.1",
-    "path": "^0.12.7"
+    "bulma": "^0.9.3"
   }
 }
