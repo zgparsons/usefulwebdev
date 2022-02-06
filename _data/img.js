@@ -3,9 +3,11 @@ const captureWebsite = require('capture-website');
 const options = {
     width: 1800,
     height: 900,
-    overwrite: true,
+    delay: 1,
+    darkMode: true,
     // add css selectors to set 'visibility:hidden'
     hideElements: [
+        '.qc-cmp-cleanslate',
         '#qc-cmp2-ui',
         '.sc-VigVT',
         '.grid-item--ad'
@@ -38,12 +40,27 @@ const items = [
     ['https://mozilla.github.io/nunjucks/', 'nunjucks'],
     ['https://sass-lang.com/', 'sass'],
     ['https://simpleicons.org/', 'simple-icons'],
-    ['https://code.visualstudio.com/', 'vs-code']
+    ['https://code.visualstudio.com/', 'vs-code'],
+    ['https://www.goatcounter.com/', 'goat-counter']
     // ...
 ];
 
-(async () => {
+// console.log('Getting images...');
+
+// This doesn't work properly - it continuously tries to fetch new screenshots, you need to have it run once when the site builds, then cache the response, and only run again after a day / week etc.
+// Have tried 11ty cache assets but it doesn't work because these are local assets...
+// When I say 'it doesn't work' I mean: I don't know how to make it work.
+
+const getImages = async () => {
     await Promise.all(items.map(([url, filename]) => {
-        return captureWebsite.file(url, `${filename}.png`, options);
-    }));
-})();
+        return captureWebsite.file(url, `../img/${filename}.png`, options)
+    }))
+};
+
+// Function call is commented to stop it running continuously:
+// try {
+//     getImages().then(console.log('Got images!'));
+// } catch (error) {
+//     console.log('Error:', error)
+//     return 
+// }

@@ -4,8 +4,7 @@ safeTitle: Bulma
 description: Bulma is a free, open source CSS framework based on Flexbox and used by more than 200,000 developers.
 date: 2020-04-15
 tags:
-  - CSS
-  - Framework
+  - CSS Framework
   - DevSites
 layout: layouts/post.njk
 image: /img/bulma.png
@@ -19,8 +18,10 @@ site: https://bulma.io
 ## Open source CSS framework
 
 <figure class="image">
-<img alt="{{ alt }}" src="{{ image }}">
+<img alt="{{ alt }}" src="{{ image }}" >
 </figure>
+
+
 
 > {{ description }}
 >

@@ -11,6 +11,7 @@ image: /img/deno.png
 alt: Deno homepage
 icon: deno
 site: https://deno.land
+draft: true
 ---
 
 <div class="box">
