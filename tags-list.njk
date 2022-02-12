@@ -15,7 +15,7 @@ layout: layouts/main.njk
 <div class="box">
 <div class="tags field is-grouped is-grouped-centered">
 {% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  {% set tagUrl %}/{{ tag | slugify }}/{% endset %}
   <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
 {% endfor %}
 </div>

@@ -4,7 +4,6 @@ safeTitle: MDN Web Docs
 description: "MDN's mission is simple: provide developers with the information they need to easily build projects on the open Web."
 date: 2020-04-11
 tags:
-  - Developer
   - Documentation
 layout: layouts/post.njk
 image: /img/mdn-web-docs.png

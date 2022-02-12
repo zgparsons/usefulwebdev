@@ -2,16 +2,17 @@
 layout: layouts/main.njk
 templateClass: tmpl-post
 ---
-<hr>
 <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
     <li><a href="{{ '/' | url }}"><button class="button is-info is-light is-small">← Home</button></a></li>
     <li class="is-active"><a href="{{ page.url | url }}" aria-current="page">{{ safeTitle }}</a></li>
   </ul>
 </nav>
+<hr>
 <h1 class="title">{{ safeTitle }}</h1>
 <div class="columns">
   <div class="column is-three-quarters">
+    <hr>
     <div class="content">
     {{ content | safe }}
       <div class="box">
@@ -23,7 +24,7 @@ templateClass: tmpl-post
           {% endif %}
           {% for tag in tags %}
             {%- if collections.tagList.indexOf(tag) != -1 -%}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              {% set tagUrl %}/{{ tag | slugify }}/{% endset %}
               <p class="control">
               <a href="{{ tagUrl | url }}" class="tag is-primary is-light">{{ tag }}</a>
               </p>

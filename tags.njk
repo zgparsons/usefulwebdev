@@ -13,7 +13,7 @@ pagination:
 layout: layouts/main.njk
 renderData:
   title: Tagged “{{ tag }}”
-permalink: /tags/{{ tag }}/
+permalink: /{{ tag | slugify }}/
 ---
 <h1 class="title is-text-primary">Tagged “{{ tag }}”</h1>
 <nav class="breadcrumb" aria-label="breadcrumbs">

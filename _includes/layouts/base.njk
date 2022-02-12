@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="{{ '/css/styles.css' }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <script src="https://kit.fontawesome.com/63bc0d330b.js" crossorigin="anonymous"></script>
+    <script src="/js/linkContext.js" defer></script>
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header>
@@ -33,7 +41,7 @@
           <div class="navbar-end">
             <div class="navbar-item buttons field is-grouped">
               <p class="control">
-                <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">
+                <a href="https://github.com/zgparsons/usefulwebdev">
                   <button class="button is-info is-light is-small">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -43,7 +51,7 @@
                 </a>
               </p>
               <p class="control">
-                <a href="https://twitter.com/originalzedders" target="_blank">
+                <a href="https://twitter.com/originalzedders">
                   <button class="button is-info is-light is-small">
                     <span class="icon">
                       <i class="fab fa-twitter"></i>
@@ -66,6 +74,12 @@
     {{ content | safe }}
 
     <footer class="footer">
+      <div class="container">
+        <h3>
+          🚀 DevSites
+        </h3>
+        <br>
+      </div>
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <nav class="is-spaced" id="footer-nav" role="navigation" aria-label="main navigation">
         <div class="container buttons field is-grouped">
@@ -81,11 +95,7 @@
       <hr>
       <div class="container">
         <div class="buttons is-grouped level">
-          <div class="level-item">
-            <h3 class="subtitle control">
-              🚀 DevSites
-            </h3>
-          </div>
+          
           <div class="level-item">
             <p>
               <a href="https://github.com/zgparsons/usefulwebdev" target="_blank">

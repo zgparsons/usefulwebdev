@@ -9,7 +9,8 @@
     "debug": "DEBUG=* eleventy",
     "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "v": "node -v"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,8 @@
     "markdown-it-anchor": "^8.4.1"
   },
   "dependencies": {
-    "bulma": "^0.9.3"
+    "bulma": "^0.9.3",
+    "node": "14.0.0",
+    "node-sass": "^7.0.1"
   }
 }

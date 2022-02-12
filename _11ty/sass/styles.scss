@@ -91,6 +91,12 @@ footer p {
   font-weight: 700;
 }
 
+/* OL style */
+
+ol > li > p {
+  margin-bottom: 1em;
+}
+
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";

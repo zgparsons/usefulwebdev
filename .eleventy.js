@@ -39,6 +39,9 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("js");
+  // Copy `img/favicon/` to `_site/`
+  eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
